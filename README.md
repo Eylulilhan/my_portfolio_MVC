@@ -1,4 +1,4 @@
-Proje Açıklaması
+Proje Açıklaması: 
 Bu proje, ASP.NET MVC5 teknolojisi kullanılarak geliştirilen kişisel bir web sitesidir.
 Proje, veri tabanı entegrasyonu, yönetici doğrulama, yönetici paneli ve  gibi önemli işlevsellikleri içerir. Yönetici panelinde,  yönetici tanıtmak istediği her bir alan için
 (Projelerim, hakkımda, banner, sosyal medya, iletişim, eğitimlerim, deneyimlerim, uzmanlık alanlarım, referanslarım, mesajlar, ) temel CRUD(Ekle,Sil,Güncelle) işlemleri LİNQ sorguları ile 
