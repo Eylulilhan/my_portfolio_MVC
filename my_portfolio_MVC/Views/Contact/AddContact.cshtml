@@ -1,0 +1,16 @@
+﻿@model my_portfolio_MVC.Models.Tbl_Contacts
+@{
+    ViewBag.Title = "AddContact";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Yeni İletişim Bilgisi Ekleme Sayfasına Hoş geldiniz...</h2>
+<br />
+<form method="post">
+    <label>Telefon No</label>
+    @Html.TextBoxFor(x => x.Pnone, new { @class = "form-control" })
+    <label>E-mail</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Ekle</button>   
+

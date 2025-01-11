@@ -1,0 +1,30 @@
+﻿@model my_portfolio_MVC.Models.Tbl_Testimonials
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Referans Güncelleme Sayfasına Hoş geldiniz...</h2>
+<br />
+<form method="post" enctype="multipart/form-data">
+
+    @Html.HiddenFor(x => x.Testimonialid)
+
+    <label>Ad-Soyad</label>
+    <input type="text" name="NameSurname" class="form-control" value="@Model.NameSurname" />
+    <br />
+    <label>Ünvan</label>
+    <input type="text" name="Title" class="form-control" value="@Model.Title" />
+    <br />
+    <label>Resim Yükleyin</label>
+    <input type="file" name="ImageFile" />
+    <br />
+    <label>Yorum</label>
+    <textarea name="Comment" class="form-control">@Model.Comment</textarea>
+    <br />
+
+    <button class="btn btn-outline-primary">Güncelle</button>
+    <br />
+</form>
+    
+

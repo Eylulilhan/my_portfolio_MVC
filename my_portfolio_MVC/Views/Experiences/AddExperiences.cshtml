@@ -1,0 +1,27 @@
+﻿@model my_portfolio_MVC.Models.Tbl_Experiences
+@{
+    ViewBag.Title = "AddExperiences";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Yeni Dneyim Ekleme Sayfasına Hoş geldiniz...</h2>
+<br />  
+<form method="post">
+    <label>Kurum Adı</label>
+    <input type="text" name="CompanyName" class="form-control" />
+    <label>Ünvan</label>
+    <input type="text" name="Title" class="form-control" />
+    <br />
+    <label>Başlama Tarihi</label>
+    <input type="datetime-local" name="StartDate" class="form-control" />
+    <br />
+    <label>Bitiş Tarihi</label>
+    <input type="datetime-local" name="EndDate" class="form-control" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" name="Description" class="form-control" />
+    <br />
+    <button class="btn btn-outline-success">Ekle</button>   
+    </form>
+
+

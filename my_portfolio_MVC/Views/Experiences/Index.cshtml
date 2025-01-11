@@ -1,0 +1,48 @@
+﻿@model List<my_portfolio_MVC.Models.Tbl_Experiences>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;  
+}
+
+<h2>Deneyimlerim Sayfasına Hoş geldiniz...</h2>
+<br />
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Kurum Adı</th>
+        <th>Ünvan</th>
+        <th>Başlama Tarihi </th>
+        <th>Bitiş Tarihi</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelleme</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.CompanyName</td>
+            <td>@item.Title</td>
+            <td>@item.StartDate</td>
+            <td>@item.EndDate</td>
+            <td>@item.Description</td>
+            <td><a href="/Experiences/DeleteExperiences/@item.Experienceid" class="btn btn-outline-danger">SİL</a></td>
+            <td><a href="/Experiences/UpdateExperiences/@item.Experienceid" class="btn btn-outline-info">Güncelle</a></td>
+
+
+
+
+        </tr>
+    }
+</table>
+<br />
+<a href="/Experiences/AddExperiences/" class="btn btn-outline-success">Yeni Deneyim Ekle</a>
+
+
+
+
+

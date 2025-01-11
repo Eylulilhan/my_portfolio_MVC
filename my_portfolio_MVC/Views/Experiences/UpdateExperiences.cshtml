@@ -1,0 +1,29 @@
+﻿@model my_portfolio_MVC.Models.Tbl_Experiences
+@{
+    ViewBag.Title = "UpdateExperiences";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    
+}
+
+<h2>Deneyim Güncelleme Sayfasına Hoş geldiniz...</h2>
+<form method="post">
+
+    @Html.HiddenFor(x => x.Experienceid)
+    <label>Kurum Adı</label>
+    @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+    <label>Ünvan</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Başlama Tarihi</label>
+    @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+    <br />
+    <label>Bitiş Tarihi</label>
+    @Html.TextBoxFor(x => x.EndDate, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />  
+    <button class="btn btn-outline-success">Güncelle</button>
+
+</form>
+    

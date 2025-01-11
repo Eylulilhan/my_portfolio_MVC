@@ -1,0 +1,17 @@
+﻿@model my_portfolio_MVC.Models.Tbl_Expertises
+@{
+    ViewBag.Title = "UpdateExpertise";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Uzmanlık Alanı Güncelleme Sayfasına Hoş geldiniz...</h2>
+<br />
+<form method="post">
+    @Html.HiddenFor(x => x.Expertiseid)
+    <label>Başlık</label>
+    <input type="text" name="Title" class="form-control" value="@Model.Title" />
+    <br />
+    <button class="btn btn-outline-success">Güncelle</button>   
+
+</form>
+

@@ -1,0 +1,41 @@
+﻿@model List<my_portfolio_MVC.Models.Tbl_Banners>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Burası Banner Sayfasıdır.</h2>
+<br />
+<table class="table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>IsSown</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+
+
+
+            <td>@count</td>
+            <td>@item.title</td>
+            <td>@item.dicsreption</td>
+            <td>@item.isShown</td>
+            <td><a href="/Banner/DeleteBanner/@item.bannerid" class="btn btn-outline-danger">SİL</a></td>
+            <td><a href="/Banner/UpdateBanner/@item.bannerid" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<br />
+<a href="/Banner/AddBanner" class="btn btn-outline-warning"> Ekle</a>
+
+

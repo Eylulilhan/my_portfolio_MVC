@@ -1,0 +1,25 @@
+﻿@model my_portfolio_MVC.Models.Tbl_Testimonials
+@{
+    ViewBag.Title = "AddTestimonial";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Referans Ekleme Sayfası</h2>
+
+<br />
+<form method="post" enctype="multipart/form-data">
+    <label>Ad-Soyad</label>
+    <input type="text" name="NameSurname" class="form-control" />
+    <br />
+    <label>Ünvan</label>
+    <input type="text" name="Title" class="form-control" />
+    <br />
+    <label>Resim Yükle</label>
+    <input type="file" name="ImageFile" class="form-control" />
+    <br />
+    <label>Yorum</label>
+    <textarea name="Comment" class="form-control"></textarea>   
+    <button class="btn btn-outline-primary">Kaydet</button>
+    <br />
+</form>
+

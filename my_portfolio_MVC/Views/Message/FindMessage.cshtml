@@ -1,0 +1,55 @@
+﻿@model List<my_portfolio_MVC.Models.Tbl_Messages>   
+<nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+    <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+        <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+    </a>
+    <a href="#" class="sidebar-toggler flex-shrink-0">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="navbar-nav align-items-center ms-auto">
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fa fa-envelope me-lg-2"></i>
+                <span class="d-none d-lg-inline-flex">Mesajlar</span>
+            </a>
+           
+                <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+
+                    <hr class="dropdown-divider">
+                    <a href="#" class="dropdown-item">
+
+                        <hr class="dropdown-divider">
+                        @foreach (var item in Model)
+                        {
+                            <a href="/Message/MessageDetail/@item.Messageid" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+
+                                    <div class="ms-2">
+
+                                        <h6 class="fw-normal mb-0">@item.Name</h6>
+                                        <small>@item.Subject</small>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                            <hr class="dropdown-divider">
+                        
+
+</div>
+            
+            </div>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="ropdown">
+                <img class="rounded-circle me-lg-2" src="~/Templates/darkpan-1.0.0/darkpan-1.0.0/img/eylulilhan.jpeg" alt="" style="width: 35px; height: 40px;">
+                <span class="d-none d-lg-inline-flex">Eylül İLHAN</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                <a href="/Default/Index" class="dropdown-item">Siteye Git</a>
+                <a href="/Profile/Index" class="dropdown-item">Profilim</a>
+                <a href="#" class="dropdown-item">Çıkış Yap</a>
+            </div>
+        </div>
+    </div>@*~/Templates/darkpan-1.0.0/darkpan-1.0.0/img/eylulilhan.jpeg*@
+</nav>
+

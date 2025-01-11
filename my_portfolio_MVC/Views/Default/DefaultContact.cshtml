@@ -1,0 +1,48 @@
+﻿@model List<my_portfolio_MVC.Models.Tbl_Contacts>
+<section id="contact" class="s-contact target-section">
+
+    <div class="row contact-top">
+        <div class="column lg-12">
+            <h2 class="text-pretitle">
+                Get In Touch
+            </h2>
+
+            <p class="h1">
+                I love to hear from you.
+                Whether you have a question or just
+                want to chat about design, tech & art — shoot me a message.
+            </p>
+        </div>
+    </div> <!-- end contact-top -->
+
+   
+
+    <div class="row contact-bottom">
+        <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+            <h3 class="text-pretitle">Telefon</h3>
+            <p >
+                Eylül İLHAN<br />
+                @foreach(var item in Model)
+            {
+                @item.Pnone
+                    <br />
+                    @item.Email
+
+            }
+
+            </p>
+        </div>
+        
+        <div class="column lg-4 md-12 contact-block">
+            <a href="#contact2" class="btn btn-primary">
+                Bana Ulaşın
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+</section>
+

@@ -1,0 +1,39 @@
+﻿@model List<my_portfolio_MVC.Models.TblAbout>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Hakkımda Sayfasına Hoş geldiniz...</h2>
+<br />
+<table class="table table-bordered">
+
+    <tr>
+        <th></th>
+        <th>Resim Url</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>CV</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.imageUrl</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@item.CvUrl</td>
+            <td><a href="/About/DeleteAbout/@item.Aboutid" class=" btn btn-outline-danger">Sil</a></td>
+            <td><a href="/About/AddAbout/@item.Aboutid" class=" btn btn-outline-info">Güncelle</a></td>
+
+
+        </tr>
+    }
+</table>
+
+
+

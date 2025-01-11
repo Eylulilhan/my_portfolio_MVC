@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Partial("~/Views/AdminLayout/AdminLayoutHead.cshtml")
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        
+        @Html.Partial("~/Views/AdminLayout/AdminLayoutSpinner.cshtml")
+        <
+        @Html.Action("AdminLayoutSidebar","AdminLayout")
+    </div>
+
+    <div class="content">
+        
+        @*@Html.Partial("~/Views/AdminLayout/AdminLayoutNavbar.cshtml")*@
+       @Html.Action("AdminLayoutNavbar","AdminLayout")
+
+        <div class="container-fluid pt-4 px-4">
+            <div class="col-12 bg-secondary">
+                @RenderBody()
+            </div>
+        </div>
+      
+        @Html.Partial("~/Views/AdminLayout/AdminLayoutFooter.cshtml")
+        
+    </div>
+    
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    @Html.Partial("~/Views/AdminLayout/AdminLayoutScripts.cshtml")
+</body>
+
+</html>

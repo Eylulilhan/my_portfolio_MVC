@@ -1,0 +1,32 @@
+﻿@model my_portfolio_MVC.Models.TblAbout
+@{
+    ViewBag.Title = "AddAbout";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Hakkımda Güncelleme Sayfasına Hoş geldiniz...</h2>
+<br />
+
+
+<form method="post" enctype="multipart/form-data">
+    @Html.HiddenFor(x => x.Aboutid)
+
+    <label>Resim Seç</label>
+    <input type="file" name="ImageFile" />
+    <br />
+    <br />
+    <label>Başlık</label>
+    <input type="text" name="Title" class="form-control" value="@Model.Title" />
+    <input type="text" name="Description" class="form-control" value="@Model.Description" />
+    <br />
+    <br />
+    <label>CV Yükleyin</label>
+    <input type="file" name="CV" accept="application/pdf" />
+    <br />
+    <br />
+    <button class="btn btn-outline-primary">Güncelle</button>
+    <br />
+    <br />
+</form>
+
+
