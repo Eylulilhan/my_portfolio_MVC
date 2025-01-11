@@ -224,6 +224,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\eylulilhan %281%29.jpeg" />
+    <Content Include="images\eylulilhan.jfif" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -552,7 +554,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="CV\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
