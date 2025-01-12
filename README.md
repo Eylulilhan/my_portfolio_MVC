@@ -8,4 +8,8 @@ Anasayfada yer alan bilgiler tamamen dinamik bir şekilde getirilmiştir. Ziyare
 Proje ile ilgili görsellere ulaşmak için proje dosyasının içinde bulunan images klasörüne bakabilirsiniz.
 
 <img src="https://github.com/Eylulilhan/my_portfolio_MVC/blob/master/my_portfolio_MVC/images/Anasayfa_1.PNG" alt="Anasayfa" width="1000">
+<br>
+<img src="https://github.com/Eylulilhan/my_portfolio_MVC/blob/master/my_portfolio_MVC/images/Anasayfa_2.PNG" alt="Anasayfa" width="1000">
+
+
 
