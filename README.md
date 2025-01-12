@@ -6,3 +6,5 @@ veri tabanından veri çekme işlemleri gerçekleştirilmiş olup ve yine LİNQ 
 Yönetici paneline giriş için session oturum açma işlemleri yapılmış olup belirtilen süre kadar kullanıcı aktif olmadığı takdirde güvenlik için tekrar oturum açma işlemi yapılmıştır.
 Anasayfada yer alan bilgiler tamamen dinamik bir şekilde getirilmiştir. Ziyaretçiler anasayfada formlar aracılığıyla mesaj gönderebilirler. 
 Proje ile ilgili görsellere ulaşmak için proje dosyasının içinde bulunan images klasörüne bakabilirsiniz.
+
+https://github.com/Eylulilhan/my_portfolio_MVC/blob/master/my_portfolio_MVC/images/Anasayfa_1.PNG
