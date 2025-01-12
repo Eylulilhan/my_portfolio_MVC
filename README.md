@@ -7,5 +7,5 @@ Yönetici paneline giriş için session oturum açma işlemleri yapılmış olup
 Anasayfada yer alan bilgiler tamamen dinamik bir şekilde getirilmiştir. Ziyaretçiler anasayfada formlar aracılığıyla mesaj gönderebilirler. 
 Proje ile ilgili görsellere ulaşmak için proje dosyasının içinde bulunan images klasörüne bakabilirsiniz.
 
-<img src="https://github.com/Eylulilhan/my_portfolio_MVC/blob/master/my_portfolio_MVC/images/Anasayfa_1.PNG" alt="Anasayfa" width="300">
+<img src="https://github.com/Eylulilhan/my_portfolio_MVC/blob/master/my_portfolio_MVC/images/Anasayfa_1.PNG" alt="Anasayfa" width="700">
 
