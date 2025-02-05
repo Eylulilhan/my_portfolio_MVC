@@ -1,10 +1,68 @@
-Proje Açıklaması: 
-Bu proje, ASP.NET MVC5 teknolojisi kullanılarak geliştirilen kişisel bir web sitesidir.
-Proje, veri tabanı entegrasyonu, yönetici doğrulama, yönetici paneli ve  gibi önemli işlevsellikleri içerir. Yönetici panelinde,  yönetici tanıtmak istediği her bir alan için
-(Projelerim, hakkımda, banner, sosyal medya, iletişim, eğitimlerim, deneyimlerim, uzmanlık alanlarım, referanslarım, mesajlar, ) temel CRUD(Ekle,Sil,Güncelle) işlemleri LİNQ sorguları ile 
-veri tabanından veri çekme işlemleri gerçekleştirilmiş olup ve yine LİNQ sorguları ile projede bazı istatistik bilgiler getirilmiştir.(gelen son 3 mesaj, okunan mesajlar vb.)
-Yönetici paneline giriş için session oturum açma işlemleri yapılmış olup belirtilen süre kadar kullanıcı aktif olmadığı takdirde güvenlik için tekrar oturum açma işlemi yapılmıştır.
-Anasayfada yer alan bilgiler tamamen dinamik bir şekilde getirilmiştir. Ziyaretçiler anasayfada formlar aracılığıyla mesaj gönderebilirler. 
+# 📌 Kişisel Web Sitesi Projesi
+
+Bu proje, **ASP.NET MVC5** teknolojisi kullanılarak geliştirilen kişisel bir web sitesidir. Proje, veri tabanı entegrasyonu, dinamik içerik yönetimi ve yönetici paneli gibi önemli işlevsellikler sunmaktadır.
+
+---
+
+## 🚀 Proje Özellikleri
+
+### 1. **Yönetici Paneli**
+- Yönetici, aşağıdaki alanlar için temel **CRUD (Ekle, Sil, Güncelle)** işlemlerini gerçekleştirebilir:
+  - **Projelerim**  
+  - **Hakkımda**  
+  - **Banner**  
+  - **Sosyal Medya**  
+  - **İletişim**  
+  - **Eğitimlerim**  
+  - **Deneyimlerim**  
+  - **Uzmanlık Alanlarım**  
+  - **Referanslarım**  
+  - **Mesajlar**
+- **LİNQ Sorguları** ile veritabanından veri çekme işlemleri uygulanmıştır. 
+- **İstatistik Bilgileri:** 
+  - Gelen son 3 mesaj
+  - Okunan mesajlar vb.
+
+---
+
+### 2. **Kullanıcı Doğrulama**
+- **Session tabanlı oturum açma sistemi** kullanılmıştır.
+- Belirtilen süre boyunca kullanıcı aktif olmazsa, güvenlik için oturum sonlandırılır ve tekrar giriş yapılması istenir.
+
+---
+
+### 3. **Anasayfa**
+- Tüm içerikler **dinamik** olarak veritabanından getirilmiştir.
+- **Ziyaretçiler**, formlar aracılığıyla mesaj gönderebilir.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+- **Backend:** ASP.NET MVC5, Entity Framework
+- **Frontend:** HTML, CSS, Bootstrap
+- **Veritabanı:** Microsoft SQL Server
+- **Sorgular:** LINQ
+- **Araçlar:** Visual Studio
+
+---
+
+## 💡 Öne Çıkan Özellikler
+- **Dinamik Veri Yönetimi:** Tüm içerikler kullanıcı dostu bir şekilde yönetilebilir. 
+- **CRUD İşlemleri:** Verilerin kolaylıkla yönetilmesi sağlanmıştır. 
+- **İstatistiksel Veriler:** Yönetici paneline eklenen istatistiklerle veri analizi yapılabilir.
+- **Güvenlik:** Session tabanlı oturum kontrolü ile güvenli bir giriş-çıkış sistemi oluşturulmuştur.
+
+---
+
+## 📂 Proje Yapısı
+- **Admin Paneli**: Yönetici için özelleştirilmiş içerik yönetim arayüzü.
+- **Anasayfa**: Ziyaretçiler için projeler, hakkımda bölümü, iletişim formu ve diğer alanlar.
+- **Veri Tabanı**: Code First yaklaşımıyla oluşturulmuş ilişkisel veritabanı modeli.
+
+---
+
+## 🎯 Geliştirme Süreci
+Bu proje, **ASP.NET MVC5** teknolojisi ile geliştirilmiş olup **Code First** yaklaşımı benimsenmiştir. LINQ sorguları ile veri işlemleri optimize edilmiş ve kullanıcı deneyimi ön planda tutulmuştur.
 
 
 <img src="https://github.com/Eylulilhan/my_portfolio_MVC/blob/master/my_portfolio_MVC/images/Anasayfa_1.PNG" alt="Anasayfa" width="1000">
